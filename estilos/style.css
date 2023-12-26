@@ -11,12 +11,73 @@
 html, body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    height: 750px;
+    width: 375px;
+}
+
+button.menos {
+    display: none;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+p.mais {
+    color: hsl(292, 16%, 49%);
+    margin: 10px 0px 10px 0px;
+    /* display: none; */
+}
+
+.titulo {
+    display: flex;
+}
+
+.titulo img {
+    width: 25px;
+    margin-top: 8px;
 }
 
 h1 {
     font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 h4 {
     font-weight: 600;
+    text-align: left;
+    color: hsl(292, 42%, 14%);
 }
+
+hr {
+    margin: 20px 0px 20px 0px;
+    border-color: hsl(275, 100%, 97%);
+}
+
